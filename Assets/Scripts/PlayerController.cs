@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour {
 			this.mode = 0;
 			this.car.SetActive (true);
 			this.mech.SetActive (false);
+		} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			this.mode = 1;
+			this.car.SetActive (false);
+			this.mech.SetActive (true);
 		}
 		
 		int horizontal = 0;
