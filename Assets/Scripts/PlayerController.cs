@@ -5,14 +5,22 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed;
 
+	public GameObject mech;
+	public GameObject car;
+	private int mode = 1;
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			this.mode = 0;
+			this.car.SetActive (true);
+			this.mech.SetActive (false);
+		}
 		
 		int horizontal = 0;
 		int vertical = 0;

@@ -403,6 +403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  mech: {fileID: 767094968}
+  car: {fileID: 607829248}
 --- !u!4 &381254914
 Transform:
   m_ObjectHideFlags: 0
@@ -755,12 +757,12 @@ GameObject:
   - 4: {fileID: 607829249}
   - 212: {fileID: 607829250}
   m_Layer: 0
-  m_Name: Porsche 911 Carrera 1998
+  m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &607829249
 Transform:
   m_ObjectHideFlags: 0
@@ -1617,6 +1619,10 @@ Prefab:
     - target: {fileID: 410908, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 156070, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
+      propertyPath: m_Name
+      value: Mech
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
