@@ -22,8 +22,6 @@ public class PlayerController : MonoBehaviour {
 		bool w = Input.GetKey(KeyCode.A);
 		bool e = Input.GetKey(KeyCode.D);
 
-
-
 		if (n) {
 			vertical++;
 		}
@@ -36,10 +34,11 @@ public class PlayerController : MonoBehaviour {
 		if(e) {
 			horizontal++;
 		}
+		float distance = speed * Time.deltaTime;
 
 		Vector2 movement = new Vector2 (horizontal, vertical);
 		movement.Normalize ();
-		movement.Scale (new Vector2(speed * Time.deltaTime, speed* Time.deltaTime));
+		movement.Scale (new Vector2(distance, distance));
 
 		this.gameObject.transform.Translate (movement);
 	}
