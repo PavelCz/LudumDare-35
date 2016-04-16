@@ -765,6 +765,17 @@ SpriteRenderer:
 GameObject:
   m_PrefabParentObject: {fileID: 156070, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
   m_PrefabInternal: {fileID: 1561172940}
+--- !u!114 &767094969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767094968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677ceccbad9324fb2817afc30a1732c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &841198522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,11 +1481,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 410908, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.03
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 410908, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.29
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 410908, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
       propertyPath: m_LocalPosition.z
