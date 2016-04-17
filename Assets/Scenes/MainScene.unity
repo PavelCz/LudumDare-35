@@ -402,7 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677ceccbad9324fb2817afc30a1732c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  mechSpeed: 1.5
+  carSpeed: 45
   mech: {fileID: 767094968}
   car: {fileID: 607829248}
 --- !u!4 &381254914
