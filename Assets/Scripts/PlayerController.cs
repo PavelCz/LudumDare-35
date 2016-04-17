@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 		bool right = Input.GetKey(KeyCode.D);
 
 		if (this.mode == 1) {
-			this.MechMovement (delta, up, down, left, right);
+			this.UpdateMech (delta, up, down, left, right);
 		} else {
 			this.CarMovement (delta, up, down, left, right);
 		}
@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 			this.mech.transform.position = this.activeGameObject.transform.position;
 			this.activeGameObject = this.mech;
 		}
+
 	}
 
 	void CarMovement(float delta, bool up, bool down, bool left, bool right) {
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void MechMovement(float delta, bool up, bool down, bool left, bool right) {
+	void UpdateMech(float delta, bool up, bool down, bool left, bool right) {
 		int horizontal = 0;
 		int vertical = 0;
 
@@ -94,7 +95,15 @@ public class PlayerController : MonoBehaviour {
 		Vector2 movement = new Vector2 (horizontal, vertical);
 		movement.Normalize ();
 		movement.Scale (new Vector2(distance, distance));
-
 		this.activeGameObject.transform.Translate (movement);
+
+		Vector2 mouse = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
+		float width = (mouse.x) - this.activeGameObject.transform.position.x;
+		float height = (mouse.y) - this.activeGameObject.transform.position.y;
+
+		float angle = Mathf.Atan2 (height, width) * Mathf.Rad2Deg;
+
+		this.activeGameObject.transform.rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
 	}
 }
