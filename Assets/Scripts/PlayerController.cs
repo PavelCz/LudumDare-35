@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject mech;
 	public GameObject car;
+	public GameObject activeGameObject { get; private set;}
 	private int mode = 1;
 
 	// Use this for initialization
 	void Start () {
+		this.activeGameObject = mech;
 	}
 	
 	// Update is called once per frame
@@ -20,14 +22,15 @@ public class PlayerController : MonoBehaviour {
 			this.mode = 0;
 			this.car.SetActive (true);
 			this.mech.SetActive (false);
-			this.gameObject.GetComponent<BoxCollider2D> ().enabled = true;
-			this.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+			this.car.transform.position = this.activeGameObject.transform.position;
+			this.activeGameObject = this.car;
+
 		} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
 			this.mode = 1;
 			this.car.SetActive (false);
 			this.mech.SetActive (true);
-			this.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
-			this.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
+			this.mech.transform.position = this.activeGameObject.transform.position;
+			this.activeGameObject = this.mech;
 		}
 		
 		int horizontal = 0;
@@ -56,6 +59,6 @@ public class PlayerController : MonoBehaviour {
 		movement.Normalize ();
 		movement.Scale (new Vector2(distance, distance));
 
-		this.gameObject.transform.Translate (movement);
+		this.activeGameObject.transform.Translate (movement);
 	}
 }
