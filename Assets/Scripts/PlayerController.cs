@@ -37,18 +37,22 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void UpdateMode() {
-		if (Input.GetKeyDown (KeyCode.E)) {
+		if (Input.GetKeyDown (KeyCode.E) && this.mode != 0) {
 			this.mode = 0;
 			this.car.SetActive (true);
 			this.mech.SetActive (false);
 			this.car.transform.position = this.activeGameObject.transform.position;
 			this.activeGameObject = this.car;
+			this.car.transform.rotation = this.GetMechTransform ("Lower").rotation;
+			this.car.transform.Rotate(new Vector3(0,0,-90));
 
-		} else if (Input.GetKeyDown (KeyCode.Q)) {
+		} else if (Input.GetKeyDown (KeyCode.Q) && this.mode != 1) {
 			this.mode = 1;
 			this.car.SetActive (false);
 			this.mech.SetActive (true);
 			this.mech.transform.position = this.activeGameObject.transform.position;
+			this.GetMechTransform("Lower").rotation = this.car.transform.rotation;
+			this.GetMechTransform("Lower").Rotate(new Vector3(0,0,90));
 			this.activeGameObject = this.mech;
 		}
 
