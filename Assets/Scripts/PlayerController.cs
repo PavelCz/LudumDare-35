@@ -72,22 +72,19 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void UpdateMech(float delta, bool up, bool down, bool left, bool right) {
-		Transform torsoTransform = null;
-		Transform lowerTransform= null;
-
-		foreach(Transform t in this.activeGameObject.GetComponentsInChildren<Transform> ()) {
-			Debug.Log (t.gameObject.name);
-			switch (t.name) {
-			case "Torso":
-				torsoTransform = t;
-				break;
-			case "Lower":
-				lowerTransform = t;
-				break;
-			} 
+	// valid inputs are "Torso" or "Lower"
+	private Transform GetMechTransform(string name) {
+		foreach(Transform t in this.mech.GetComponentsInChildren<Transform> ()) {
+			if(name.Equals(t.name)) {
+				return t;
+			}
 		}
+		throw new System.ArgumentException ();
+	}
 
+	void UpdateMech(float delta, bool up, bool down, bool left, bool right) {
+		Transform torsoTransform = GetMechTransform("Torso");
+		Transform lowerTransform= GetMechTransform("Lower");
 
 		int horizontal = 0;
 		int vertical = 0;
