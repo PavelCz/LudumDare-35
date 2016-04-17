@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 404964}
   - 212: {fileID: 21262502}
   - 58: {fileID: 5880874}
+  - 58: {fileID: 5886396}
   - 114: {fileID: 11426332}
   - 50: {fileID: 5026892}
-  - 58: {fileID: 5886396}
   m_Layer: 0
   m_Name: Civilian
   m_TagString: Untagged

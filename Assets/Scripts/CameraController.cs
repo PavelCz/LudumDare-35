@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
+	public static int SCORE = 0;
+
 	public GameObject player;
 	private PlayerController playerController;
 

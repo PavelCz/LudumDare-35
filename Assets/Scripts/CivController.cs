@@ -39,7 +39,8 @@ public class CivController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if(other.gameObject.tag.Equals("Player")) {
+		if(other.gameObject.name.Equals("Car")) {
+			CameraController.SCORE += 5;
 			Destroy(this.gameObject);
 		}
 	}
