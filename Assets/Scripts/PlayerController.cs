@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 			body.AddRelativeForce (new Vector2 (-carSpeed * delta, 0));
 		}
 		if (down) {
-			body.AddForce (new Vector2 (carSpeed * delta, 0));
+			body.AddRelativeForce (new Vector2 (carSpeed * delta, 0));
 		}
 		if (left) {
 			body.AddTorque (carSpeed * delta);
