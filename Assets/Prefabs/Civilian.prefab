@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 404964}
   - 212: {fileID: 21262502}
   - 58: {fileID: 5880874}
-  - 114: {fileID: 11433138}
+  - 114: {fileID: 11426332}
   m_Layer: 0
   m_Name: Civilian
   m_TagString: Untagged
@@ -44,7 +44,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.07
---- !u!114 &11433138
+--- !u!114 &11426332
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

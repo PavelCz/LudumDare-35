@@ -437,21 +437,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 494586, guid: b6ce42277aca34c8dbebf8ec2c419550, type: 2}
   m_PrefabInternal: {fileID: 1302073511}
---- !u!1 &356849004 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
-  m_PrefabInternal: {fileID: 1915773606}
---- !u!114 &356849007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 356849004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e469502cbdf294fb0983196f364a3d20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &375632264
 Prefab:
   m_ObjectHideFlags: 0
@@ -1148,7 +1133,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 5, y: 2}
+  m_Size: {x: 4.5, y: 1.9}
 --- !u!50 &607829252
 Rigidbody2D:
   serializedVersion: 2
@@ -2952,12 +2937,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 5880874, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11433138, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1959348342
