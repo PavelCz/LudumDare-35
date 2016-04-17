@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 	public float mechSpeed;
 
 	public float carSpeed;
+	public float carTurnSpeed;
 
 	public GameObject mech;
 	public GameObject car;
@@ -53,8 +54,20 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void CarMovement(float delta, bool up, bool down, bool left, bool right) {
+		Rigidbody2D body = this.activeGameObject.GetComponent<Rigidbody2D> ();
+		Transform transform = this.activeGameObject.transform;
+
 		if (up) {
-			this.activeGameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (carSpeed * delta, 0));
+			body.AddRelativeForce (new Vector2 (-carSpeed * delta, 0));
+		}
+		if (down) {
+			body.AddForce (new Vector2 (carSpeed * delta, 0));
+		}
+		if (left) {
+			body.AddTorque (carSpeed * delta);
+		}
+		if (right) {
+			body.AddTorque (-carSpeed * delta);
 		}
 	}
 
