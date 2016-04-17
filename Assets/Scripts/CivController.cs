@@ -15,7 +15,7 @@ public class CivController : MonoBehaviour {
 		waitTime = Random.Range (5, 20);
 		this.target = FindRandomPointRelative ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		this.counter -= Time.deltaTime;
@@ -39,6 +39,8 @@ public class CivController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Destroy(this.gameObject);
+		if(other.gameObject.tag.Equals("Player")) {
+			Destroy(this.gameObject);
+		}
 	}
 }

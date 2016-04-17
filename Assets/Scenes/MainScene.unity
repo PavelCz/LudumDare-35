@@ -437,6 +437,24 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 494586, guid: b6ce42277aca34c8dbebf8ec2c419550, type: 2}
   m_PrefabInternal: {fileID: 1302073511}
+--- !u!1 &356849004 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+  m_PrefabInternal: {fileID: 1915773606}
+--- !u!58 &356849010
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356849004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.09
 --- !u!1001 &375632264
 Prefab:
   m_ObjectHideFlags: 0
@@ -1073,7 +1091,7 @@ GameObject:
   - 50: {fileID: 607829252}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2518,6 +2536,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 156070, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 156070, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19fb851da05614e878c1423bb02e7c4e, type: 2}
   m_IsPrefabParent: 0
@@ -2937,9 +2963,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
-      propertyPath: speed
-      value: 1
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
