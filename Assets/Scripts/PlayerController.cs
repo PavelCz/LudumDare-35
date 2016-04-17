@@ -124,9 +124,13 @@ public class PlayerController : MonoBehaviour {
 		// get component(s)InChildren also searches parent, tehrefore in this case the second Component is needed
 		torsoTransform.rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
 
-		float lowerAngle = Vector2.Angle(new Vector2 (0,1), movement);
-		Debug.Log ("Angle:" + lowerAngle);
+
 		//rotate lower towards move direction
-		lowerTransform.rotation = Quaternion.Euler(new Vector3(0f,0f,lowerAngle));
+		if (!(horizontal == 0 && vertical == 0)) {
+			width = horizontal;
+			height = vertical;
+			angle = Mathf.Atan2 (height, width) * Mathf.Rad2Deg;
+			lowerTransform.rotation = Quaternion.Euler (new Vector3 (0f, 0f, angle - 90));
+		}
 	}
 }
