@@ -134,4 +134,5 @@ public class PlayerController : MonoBehaviour {
 			lowerTransform.rotation = Quaternion.Euler (new Vector3 (0f, 0f, angle - 90));
 		}
 	}
+
 }
