@@ -1701,7 +1701,7 @@ GameObject:
   - 4: {fileID: 1045334874}
   - 212: {fileID: 1045334875}
   m_Layer: 0
-  m_Name: lower
+  m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -73,6 +73,22 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void UpdateMech(float delta, bool up, bool down, bool left, bool right) {
+		Transform torsoTransform = null;
+		Transform lowerTransform= null;
+
+		foreach(Transform t in this.activeGameObject.GetComponentsInChildren<Transform> ()) {
+			Debug.Log (t.gameObject.name);
+			switch (t.name) {
+			case "Torso":
+				torsoTransform = t;
+				break;
+			case "Lower":
+				lowerTransform = t;
+				break;
+			} 
+		}
+
+
 		int horizontal = 0;
 		int vertical = 0;
 
@@ -96,6 +112,8 @@ public class PlayerController : MonoBehaviour {
 		movement.Scale (new Vector2(distance, distance));
 		this.activeGameObject.transform.Translate (movement);
 
+
+		// rotate torso towards mouse 
 		Vector2 mouse = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
 		float width = (mouse.x) - this.activeGameObject.transform.position.x;
@@ -104,6 +122,11 @@ public class PlayerController : MonoBehaviour {
 		float angle = Mathf.Atan2 (height, width) * Mathf.Rad2Deg;
 
 		// get component(s)InChildren also searches parent, tehrefore in this case the second Component is needed
-		this.activeGameObject.GetComponentsInChildren<Transform>()[1].rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
+		torsoTransform.rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
+
+		float lowerAngle = Vector2.Angle(new Vector2 (0,1), movement);
+		Debug.Log ("Angle:" + lowerAngle);
+		//rotate lower towards move direction
+		lowerTransform.rotation = Quaternion.Euler(new Vector3(0f,0f,lowerAngle));
 	}
 }
