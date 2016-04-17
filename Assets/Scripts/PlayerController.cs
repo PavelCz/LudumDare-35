@@ -17,7 +17,40 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float delta = Time.deltaTime;
 
+		this.UpdateMode();
+		
+		int horizontal = 0;
+		int vertical = 0;
+
+		bool up = Input.GetKey(KeyCode.W);
+		bool down = Input.GetKey(KeyCode.S);
+		bool left = Input.GetKey(KeyCode.A);
+		bool right = Input.GetKey(KeyCode.D);
+
+		if (up) {
+			vertical++;
+		}
+		if (down) {
+			vertical--;
+		}
+		if(left) {
+			horizontal--;
+		}
+		if(right) {
+			horizontal++;
+		}
+		float distance = speed * delta;
+
+		Vector2 movement = new Vector2 (horizontal, vertical);
+		movement.Normalize ();
+		movement.Scale (new Vector2(distance, distance));
+
+		this.activeGameObject.transform.Translate (movement);
+	}
+
+	void UpdateMode() {
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
 			this.mode = 0;
 			this.car.SetActive (true);
@@ -32,33 +65,5 @@ public class PlayerController : MonoBehaviour {
 			this.mech.transform.position = this.activeGameObject.transform.position;
 			this.activeGameObject = this.mech;
 		}
-		
-		int horizontal = 0;
-		int vertical = 0;
-
-		bool n = Input.GetKey (KeyCode.W);
-		bool s = Input.GetKey (KeyCode.S);
-		bool w = Input.GetKey(KeyCode.A);
-		bool e = Input.GetKey(KeyCode.D);
-
-		if (n) {
-			vertical++;
-		}
-		if (s) {
-			vertical--;
-		}
-		if(w) {
-			horizontal--;
-		}
-		if(e) {
-			horizontal++;
-		}
-		float distance = speed * Time.deltaTime;
-
-		Vector2 movement = new Vector2 (horizontal, vertical);
-		movement.Normalize ();
-		movement.Scale (new Vector2(distance, distance));
-
-		this.activeGameObject.transform.Translate (movement);
 	}
 }
