@@ -78,7 +78,6 @@ public class PlayerController : MonoBehaviour {
 
 
 		if (Input.GetKey(KeyCode.W)) {
-			Debug.Log ("W");
 			vertical++;
 		}
 		if (Input.GetKey(KeyCode.S)) {
@@ -104,6 +103,7 @@ public class PlayerController : MonoBehaviour {
 
 		float angle = Mathf.Atan2 (height, width) * Mathf.Rad2Deg;
 
-		this.activeGameObject.transform.rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
+		// get component(s)InChildren also searches parent, tehrefore in this case the second Component is needed
+		this.activeGameObject.GetComponentsInChildren<Transform>()[1].rotation = Quaternion.Euler(new Vector3(0,0,angle-90));
 	}
 }
