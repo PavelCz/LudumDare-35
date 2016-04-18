@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -21,6 +22,15 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () { 
 		float delta = Time.deltaTime;
+
+		if (Input.GetKeyDown (KeyCode.R)) {
+			MODE = 1;
+			Time.timeScale = 1;
+			CameraController.SCORE = 0;
+			SceneManager.LoadScene (0);
+
+		}
+
 
 		this.UpdateMode();
 
