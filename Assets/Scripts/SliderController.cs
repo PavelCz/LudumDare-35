@@ -12,6 +12,8 @@ public class SliderController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.GetComponent<Slider> ().value += risingSpeed * Time.deltaTime;
+		if (PlayerController.MODE == 0) {
+			this.gameObject.GetComponent<Slider> ().value += risingSpeed * Time.deltaTime;
+		}
 	}
 }

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject mech;
 	public GameObject car;
 	public GameObject activeGameObject { get; private set;}
-	private int mode = 1;
+	public static int MODE = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 		bool left = Input.GetKey(KeyCode.A);
 		bool right = Input.GetKey(KeyCode.D);
 
-		if (this.mode == 1) {
+		if (MODE == 1) {
 			this.UpdateMech (delta, up, down, left, right);
 		} else {
 			this.CarMovement (delta, up, down, left, right);
@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void UpdateMode() {
-		if (Input.GetKeyDown (KeyCode.E) && this.mode != 0) {
-			this.mode = 0;
+		if (Input.GetKeyDown (KeyCode.E) && MODE != 0) {
+			MODE = 0;
 			this.car.SetActive (true);
 			this.mech.SetActive (false);
 			this.car.transform.position = this.activeGameObject.transform.position;
@@ -46,8 +46,8 @@ public class PlayerController : MonoBehaviour {
 			this.car.transform.rotation = this.GetMechTransform ("Lower").rotation;
 			this.car.transform.Rotate(new Vector3(0,0,-90));
 
-		} else if (Input.GetKeyDown (KeyCode.Q) && this.mode != 1) {
-			this.mode = 1;
+		} else if (Input.GetKeyDown (KeyCode.Q) && MODE != 1) {
+			MODE = 1;
 			this.car.SetActive (false);
 			this.mech.SetActive (true);
 			this.mech.transform.position = this.activeGameObject.transform.position;
