@@ -31,8 +31,9 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
-
-		this.UpdateMode();
+		if (Time.timeScale != 0) {
+			this.UpdateMode ();
+		}
 
 		bool up = Input.GetKey(KeyCode.W);
 		bool down = Input.GetKey(KeyCode.S);
