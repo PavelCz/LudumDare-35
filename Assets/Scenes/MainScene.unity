@@ -518,6 +518,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -880,6 +888,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -1768,6 +1784,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -2683,6 +2707,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -2729,6 +2761,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -2829,6 +2869,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -3103,6 +3151,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -3219,6 +3275,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -3323,6 +3387,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -3791,6 +3863,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -4121,6 +4201,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -4167,6 +4255,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -4317,6 +4413,14 @@ Prefab:
       propertyPath: m_Name
       value: Civilian (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 149320, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426332, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2097147919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f715e7f5d004e4038bfe0b6f39ccf08d, type: 2}
   m_IsPrefabParent: 0
@@ -4394,7 +4498,7 @@ GameObject:
   - 114: {fileID: 2097147919}
   m_Layer: 5
   m_Name: Text (1)
-  m_TagString: Untagged
+  m_TagString: GameOverText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

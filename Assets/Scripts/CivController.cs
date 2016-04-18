@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class CivController : MonoBehaviour {
@@ -41,6 +42,7 @@ public class CivController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.name.Equals("Car")) {
 			CameraController.SCORE += 5;
+
 			Destroy(this.gameObject);
 		}
 	}
