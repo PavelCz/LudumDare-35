@@ -13,10 +13,16 @@ public class SliderController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Slider slider = this.gameObject.GetComponent<Slider> ();
+		if (slider.value >= slider.maxValue) {
+			Time.timeScale = 0;
+		}
+
+
 		if (PlayerController.MODE == 0) {
-			this.gameObject.GetComponent<Slider> ().value += risingSpeed * Time.deltaTime;
+			slider.value += risingSpeed * Time.deltaTime;
 		} else {
-			this.gameObject.GetComponent<Slider> ().value -= fallingSpeed * Time.deltaTime;
+			slider.value -= fallingSpeed * Time.deltaTime;
 		}
 	}
 }
